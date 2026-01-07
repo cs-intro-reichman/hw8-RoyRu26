@@ -65,7 +65,7 @@ public class User {
      * does nothing and returns false;
      */
     public boolean addFollowee(String name) {
-        if (follows(name) || fCount == 10) {
+        if (follows(name) || fCount == 10 || this.name == name) {
             return false;
         }
         for (int i = 0; i < maxfCount; i++) {
