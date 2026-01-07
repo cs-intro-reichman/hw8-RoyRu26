@@ -47,6 +47,7 @@ public class Network {
             User newUser = new User(name);
             users[userCount] = newUser;
             userCount ++;
+            return true;
         }
         return false;
     }
